@@ -72,3 +72,18 @@ const revealObserver = new IntersectionObserver(
 document.querySelectorAll(".reveal").forEach((el) => {
   revealObserver.observe(el);
 });
+
+works.forEach((work, index) => {
+  const card = document.createElement("div");
+  card.className = "work-card " + work.type + " reveal";
+  card.style.transitionDelay = index * 0.1 + "s";
+  card.innerHTML = `
+    <div class="work-thumb"></div>
+    <div class="work-info">
+      ${work.badge ? `<span class="work-badge">${work.badge}</span>` : ""}
+      <div class="work-title">${work.title}</div>
+      <div class="work-desc">${work.desc}</div>
+    </div>
+  `;
+  worksGrid.appendChild(card);
+});
