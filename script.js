@@ -58,6 +58,7 @@ document.querySelectorAll(".reveal").forEach((el) => {
   revealObserver.observe(el);
 });
 
+const worksGrid = document.getElementById("worksGrid");
 works.forEach((work, index) => {
   const card = document.createElement("div");
   card.className = "work-card " + work.type + " reveal";
@@ -71,4 +72,5 @@ works.forEach((work, index) => {
     </div>
   `;
   worksGrid.appendChild(card);
+  revealObserver.observe(card);
 });
