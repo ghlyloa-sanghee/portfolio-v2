@@ -27,21 +27,6 @@ const works = [
   { title: "디자인 시스템", desc: "Figma + CSS", badge: "", type: "" },
 ];
 
-const worksGrid = document.getElementById("worksGrid");
-works.forEach((work) => {
-  const card = document.createElement("div");
-  card.className = "work-card " + work.type;
-  card.innerHTML = `
-    <div class="work-thumb"></div>
-    <div class="work-info">
-      ${work.badge ? `<span class="work-badge">${work.badge}</span>` : ""}
-      <div class="work-title">${work.title}</div>
-      <div class="work-desc">${work.desc}</div>
-    </div>
-  `;
-  worksGrid.appendChild(card);
-});
-
 // ── 스킬바 애니메이션 ──
 const observer = new IntersectionObserver(
   (entries) => {
