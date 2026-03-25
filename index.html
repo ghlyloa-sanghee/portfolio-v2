@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이상희 | UI/UX Designer & Publisher</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- 헤더 -->
+    <header>
+      <div class="header-inner">
+        <div class="logo">
+          SH
+          <span>.</span>
+        </div>
+        <nav id="mainNav">
+          <a href="#about">About</a>
+          <a href="#works">Works</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="header-right">
+          <button class="theme-btn" id="themeBtn">🌙</button>
+          <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero-inner">
+        <div class="hero-tag">UI/UX Designer & Web Publisher</div>
+        <h1 class="hero-title">
+          안녕하세요,
+          <br />
+          <em>이상희</em>
+          입니다
+        </h1>
+        <p class="hero-desc">
+          디자인과 코드 사이에서
+          <br />
+          사용자 경험을 만드는 사람입니다.
+        </p>
+        <a href="#works" class="hero-btn">작업물 보기</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="section-label">About</div>
+        <h2 class="section-title">나에 대해</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>UI/UX 디자이너로 일하다가 웹 퍼블리셔로 전향했습니다. 디자인과 구현, 두 세계를 모두 이해하는 것이 강점입니다.</p>
+          </div>
+          <div class="about-skills">
+            <div class="skill-item">
+              <span class="skill-name">UI/UX Design</span>
+              <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">HTML / CSS</span>
+              <div class="skill-bar"><div class="skill-fill" style="width: 75%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">JavaScript</span>
+              <div class="skill-bar"><div class="skill-fill" style="width: 40%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Figma</span>
+              <div class="skill-bar"><div class="skill-fill" style="width: 95%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Works -->
+    <section class="works" id="works">
+      <div class="container">
+        <div class="section-label">Works</div>
+        <h2 class="section-title">작업물</h2>
+        <div class="works-grid" id="worksGrid"></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-label">Contact</div>
+        <h2 class="section-title">연락하기</h2>
+        <p class="contact-desc">새로운 프로젝트나 협업 제안은 언제든 환영해요.</p>
+        <a href="mailto:your@email.com" class="contact-btn">이메일 보내기</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 이상희. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
